@@ -31,7 +31,7 @@ export default function App() {
           </a>
         </div>
       </div>
-      <div className="p-1 m-3 text-center text-[#fff] dark:bg-white-50 dark:text-neutral-200">
+      <div className="p-1 m-3 text-center text-[#fff] dark:bg-white-50 dark:text-neutral-200 flex">
         Version : 1.0.5
       </div>
     </footer>
