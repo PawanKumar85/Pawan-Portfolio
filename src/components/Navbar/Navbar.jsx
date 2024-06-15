@@ -25,9 +25,9 @@ const Navbar = ({ data }) => {
           className={`${style.menuItems} ${menuOpen && style.menuOpen}`}
           onClick={() => setMenuOpen(false)}
         >
-          {data.navbar.map((item) => {
+          {data.navbar.map((item,index) => {
             return (
-              <li key={item.id}>
+              <li key={index}>
                 <a href={`#${item.navLink}`}>{item.navName}</a>
               </li>
             );

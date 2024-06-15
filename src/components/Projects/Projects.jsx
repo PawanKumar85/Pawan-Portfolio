@@ -6,8 +6,8 @@ const Projects = ({data}) => {
     <section className={style.container} id="project">
       <h2 className={style.title}>Projects</h2>
       <div className={style.projects}>
-        {data.projects.map((item) => {
-          return <Card key={item.projectId} item={item} />;
+        {data.projects.map((item,index) => {
+          return <Card key={index} item={item} />;
         })}
       </div>
     </section>

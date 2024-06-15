@@ -6,11 +6,11 @@ import About from "./components/About/About";
 import Experience from "./components/Experience/Experience";
 import Platform from "./components/Platform/Platform";
 import Projects from "./components/Projects/Projects";
-// import Contact from "./components/Contact/Contact";
 import data from "./Data/personalData.json";
 import Education from "./components/Education/Education";
-import ContactPageOne from "./components/Contact2/Contact2"
+import Contact from "./components/Contact/Contact"
 import Footer from "./components/Footer/Footer";
+import Achievement from "./components/Achievement/Achievement";
 
 
 function App() {
@@ -24,8 +24,8 @@ function App() {
       <Experience data = {data} />
       <Platform data={data}/>
       <Projects data={data}/>
-      {/* <Contact data={data} /> */}
-      <ContactPageOne/>
+      {/* <Achievement data={data}/> */}
+      <Contact/>
       <Footer/>
 
     </div>

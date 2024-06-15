@@ -14,9 +14,9 @@ const Platform = ({ data }) => {
         <div className={style.container}>
           <h1>Platform</h1>
           <div className={style.serviceslist}>
-            {data.platform.map((item) => {
+            {data.platform.map((item,index) => {
               return (
-                <div key={item.platformId} className="rounded-4">
+                <div key={index} className="rounded-4">
                   <img src={getImageUrl(item.imageSrc)} className=" rounded-5" alt={item.title} />
                   <h2>{item.title}</h2>
                   <p className="fs-6">{item.description}</p>

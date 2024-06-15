@@ -1,84 +1,113 @@
-import React from "react";
-import "./Contact.css";
+"use client";
 
-import { FaMapLocationDot } from "react-icons/fa6";
-import { MdOutlinePhoneInTalk } from "react-icons/md";
-import { SiMinutemailer } from "react-icons/si";
-import { FaLinkedinIn } from "react-icons/fa6";
-import { BsTwitterX } from "react-icons/bs";
-import { IoLogoInstagram } from "react-icons/io5";
+import React from "react";
+import { getImageUrl } from "../../utils";
+
 const Contact = () => {
   return (
-    <section className="contact mt-[100px]" id="contact">
-      <div className="content">
-        <h2>Contact Me</h2>
-        <p>
-          Get in touch with me for any questions, collaborations, or just to say
-          hi
-        </p>
-      </div>
-      <div className="container p-4">
-        <div className="contactInfo">
-          <div className="box">
-            <div className="icon">
-              <b></b>
-              <FaMapLocationDot className="text-3xl m-4" />
+    <section id="contact">
+      <div className="mx-auto max-w-7xl px-4">
+        <div className="mx-auto max-w-7xl py-12 md:py-24">
+          <div className="grid items-center justify-items-center gap-x-4 gap-y-10 lg:grid-cols-2">
+            <div className="flex items-center justify-center">
+              <div className="px-2 md:px-12">
+                <p className="text-2xl font-bold text-white md:text-4xl">
+                  Contact Me
+                </p>
+                <p className="mt-4 text-lg text-white">
+                  Our friendly team would love to hear from you.
+                </p>
+                <form action="" className="mt-8 space-y-4">
+                  <div className="grid w-full gap-y-4 md:gap-x-4 lg:grid-cols-2">
+                    <div className="grid w-full  items-center gap-1.5">
+                      <label
+                        className="text-sm font-medium leading-none text-gray-700 peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+                        htmlFor="first_name"
+                      >
+                        First Name
+                      </label>
+                      <input
+                        className="flex h-10 w-full rounded-md border border-gray-300 bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50 dark:border-gray-700 dark:text-gray-50 dark:focus:ring-gray-400 dark:focus:ring-offset-gray-900"
+                        type="text"
+                        id="first_name"
+                        placeholder="First Name"
+                      />
+                    </div>
+                    <div className="grid w-full  items-center gap-1.5">
+                      <label
+                        className="text-sm font-medium leading-none text-gray-700 peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+                        htmlFor="last_name"
+                      >
+                        Last Name
+                      </label>
+                      <input
+                        className="flex h-10 w-full rounded-md border border-gray-300 bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50 dark:border-gray-700 dark:text-gray-50 dark:focus:ring-gray-400 dark:focus:ring-offset-gray-900"
+                        type="text"
+                        id="last_name"
+                        placeholder="Last Name"
+                      />
+                    </div>
+                  </div>
+                  <div className="grid w-full  items-center gap-1.5">
+                    <label
+                      className="text-sm font-medium leading-none text-gray-700 peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+                      htmlFor="email"
+                    >
+                      Email
+                    </label>
+                    <input
+                      className="flex h-10 w-full rounded-md border border-gray-300 bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50 dark:border-gray-700 dark:text-gray-50 dark:focus:ring-gray-400 dark:focus:ring-offset-gray-900"
+                      type="text"
+                      id="email"
+                      placeholder="Email"
+                    />
+                  </div>
+                  <div className="grid w-full  items-center gap-1.5">
+                    <label
+                      className="text-sm font-medium leading-none text-gray-700 peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+                      htmlFor="phone_number"
+                    >
+                      Phone number
+                    </label>
+                    <input
+                      className="flex h-10 w-full rounded-md border border-gray-300 bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50 dark:border-gray-700 dark:text-gray-50 dark:focus:ring-gray-400 dark:focus:ring-offset-gray-900"
+                      type="tel"
+                      id="phone_number"
+                      placeholder="Phone number"
+                    />
+                  </div>
+                  <div className="grid w-full  items-center gap-1.5">
+                    <label
+                      className="text-sm font-medium leading-none text-gray-700 peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+                      htmlFor="message"
+                    >
+                      Message
+                    </label>
+                    <textarea
+                      className="flex h-10 w-full rounded-md border border-gray-300 bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50 dark:border-gray-700 dark:text-gray-50 dark:focus:ring-gray-400 dark:focus:ring-offset-gray-900"
+                      id="message"
+                      placeholder="Leave us a message"
+                      cols={3}
+                    />
+                  </div>
+                  <button
+                    type="button"
+                    className="w-full rounded-md bg-black px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-black/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
+                  >
+                    Send Message
+                  </button>
+                </form>
+              </div>
             </div>
-            <div className="text">
-              <h3 className="fw-bolder">Address</h3>
-              <p>
-                Mandhana Kanpur <br /> Uttar Pradesh 209217
-              </p>
-            </div>
+            <img
+              alt="Contact us"
+              className="hidden max-h-full w-full rounded-lg object-cover lg:block"
+              src={getImageUrl("more/contact.png")}
+            />
           </div>
-
-          <div className="box">
-            <div className="icon">
-              <b></b>
-              <MdOutlinePhoneInTalk className="text-3xl m-4" />
-            </div>
-            <div className="text">
-              <h3 className="fw-bolder">Phone</h3>
-              <p>+91 830-33-85440</p>
-            </div>
-          </div>
-
-          <div className="box">
-            <div className="icon">
-              <b></b>
-              <SiMinutemailer className="text-3xl m-4" />
-            </div>
-            <div className="text">
-              <h3 className="fw-bold">Email</h3>
-              <p>
-                pawan630703@gmail.com <br />
-                pawan.laterl2k22@mpgi.edu.in
-              </p>
-            </div>
-          </div>
-
-          <h2>Avaliable on</h2>
-          <ul className="flex space-x-5">
-            <li>
-              <FaLinkedinIn className="text-2xl"/>
-            </li>
-            <li>
-              <BsTwitterX className="text-2xl"/>
-            </li>
-            <li>
-              <IoLogoInstagram className="text-2xl"/>
-            </li>
-          </ul>
         </div>
-        <div className="contactForm">
-          <form>
-            <h2>Send Message</h2>
-            <div className="inputBox">
-              <input type="text" required plac />
-            </div>
-          </form>
-        </div>
       </div>
+      <hr className="mt-6" />
     </section>
   );
 };

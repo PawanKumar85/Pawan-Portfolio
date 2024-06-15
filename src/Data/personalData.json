@@ -6,27 +6,22 @@
   "bio": "I'm a full-stack developer with a passion for building scalable and efficient applications.",
   "navbar": [
     {
-      "id": 1,
       "navName": "About",
       "navLink": "about"
     },
     {
-      "id": 2,
       "navName": "Education",
       "navLink": "education"
     },
     {
-      "id": 3,
       "navName": "Skills",
       "navLink": "experience"
     },
     {
-      "id": 4,
       "navName": "Platform",
       "navLink": "platform"
     },
     {
-      "id": 5,
       "navName": "Projects",
       "navLink": "project"
     }
@@ -60,60 +55,45 @@
       "course": "Branch",
       "courseID": "CSE",
       "collage": "Maharana Pratap Engineering Collage,Kanpur",
-      "duration":"2022 -Present"
-      
+      "duration": "2022 -Present"
     },
     {
       "title": "Diploma",
       "course": "Branch",
-      "courseID":"Mechanical Engineering",
+      "courseID": "Mechanical Engineering",
       "collage": "Govt. Polytechnic Agra,Shamsabad",
-      "duration":"2019 - 2022"
-      
+      "duration": "2019 - 2022"
     },
     {
       "title": "Intermediate",
       "course": "Board",
-      "courseID":"CBSE",
+      "courseID": "CBSE",
       "collage": "D.A.V. Sr. Sec. Public School,Rihand Nagar Sonbhadra",
-      "duration":"2017 - 2019"
+      "duration": "2017 - 2019"
     },
     {
       "title": "High School",
       "course": "Board",
-      "courseID":"CBSE",
+      "courseID": "CBSE",
       "collage": "D.A.V. Sr. Sec. Public School,Rihand Nagar Sonbhadra",
-      "duration":"2017 - 2019"
-      
+      "duration": "2017 - 2019"
     }
   ],
   "projects": [
     {
-      "projectId": 1,
-      "title": "Demo",
-      "imageSrc": "projects/soon.webp",
+      "title": "Tic-Tae-Toe",
+      "imageSrc": "projects/Tie-Tac-Toe.webp",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, ",
-      "skills": ["React", "Express", "Node"],
-      "demo": "https://www.example.com",
-      "source": "https://www.github.com"
+      "skills": ["React", "Bootstrap5", "Node"],
+      "demo": "https://projects-seven-sigma.vercel.app/"
+
     },
     {
-      "projectId": 2,
-      "title": "Demo",
-      "imageSrc": "projects/soon.webp",
+      "title": "Password Generater",
+      "imageSrc": "projects/password-generation.avif",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit,",
-      "skills": ["Flutter", "Express", "Node"],
-      "demo": "https://www.example.com",
-      "source": "https://www.github.com"
-    },
-    {
-      "projectId": 3,
-      "title": "Demo",
-      "imageSrc": "projects/soon.webp",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, ",
-      "skills": ["HTML", "CSS", "JS", "Bootstrap"],
-      "demo": "https://www.example.com",
-      "source": "https://www.github.com"
+      "skills": ["React", "Bootstrap5", "Node"],
+      "demo": "https://www.example.com"
     }
   ],
   "skills": [
@@ -153,9 +133,9 @@
       "imageSrc": "skills/javascript3D.png"
     },
     {
-      "skillId": 8,
-      "title": "Flutter",
-      "imageSrc": "skills/flutter3D.png"
+      "skillId":8,
+      "title":"Flutter",
+      "imageSrc":"skills/flutter3D.png"
     },
     {
       "skillId": 9,
@@ -165,21 +145,18 @@
   ],
   "platform": [
     {
-      "platformId": 1,
       "title": "GeeksGeeks",
       "imageSrc": "platform/gfg.png",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nullam vehicula ipsum a arcu cursus vitae congue mauris rhoncus.",
       "link": "https://www.geeksforgeeks.org/user/pawan_kumar85440/"
     },
     {
-      "platformId": 2,
       "title": "Leetcode",
       "imageSrc": "platform/leetcode.png",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nullam vehicula ipsum a arcu cursus vitae congue mauris rhoncus.",
       "link": "https://leetcode.com/u/Pawan83033/"
     },
     {
-      "platformId": 4,
       "title": "Github",
       "imageSrc": "platform/github.png",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nullam vehicula ipsum a arcu cursus vitae congue mauris rhoncus.",
@@ -237,5 +214,6 @@
       "icon": "contact/emailIcon.png",
       "alt": "Email Icon"
     }
-  }
+  },
+  "achievement": []
 }

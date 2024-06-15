@@ -15,8 +15,7 @@ const Card = ({
         })}
       </ul>
       <div className={style.links}>
-        <a href={demo} className={style.link}>Demo</a>
-        <a href={source} className={style.link}>Source</a>
+        <a href={demo} className={style.link}>Click Me </a>
       </div>
     </div>
   );
